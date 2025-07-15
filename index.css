@@ -1,0 +1,126 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  /* Navbar styling */
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #1e1e1e;
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 1px solid #333;
+  }
+  
+  #navbar header {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #facc15;
+  }
+  
+  #navbar ul {
+    list-style-type: none;
+  }
+  
+  #navbar li {
+    margin: 10px 0;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #b0b0b0;
+    transition: color 0.3s;
+  }
+  
+  /* Pseudo Selector: Hover on links */
+  .nav-link:hover {
+    color: #facc15;
+  }
+  
+  /* Main Content */
+  #main-doc {
+    margin-left: 270px;
+    padding: 20px;
+  }
+  
+  /* Section Headers */
+  .main-section header {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #4ade80;
+  }
+  
+  /* Articles */
+  article {
+    margin-bottom: 30px;
+  }
+  
+  article p {
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  li {
+    margin-bottom: 8px;
+  }
+  
+  /* Code block */
+  code {
+    display: block;
+    background-color: #2d2d2d;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #facc15;
+    overflow-x: auto;
+  }
+  
+  /* Pseudo Selector: First letter in article paragraphs */
+  article p::first-letter {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #facc15;
+  }
+  
+  /* Pseudo Selector: Main section hover */
+  .main-section:hover {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+  .copy-btn:hover {
+    opacity: 1;
+  }
